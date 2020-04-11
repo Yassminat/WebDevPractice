@@ -60,6 +60,40 @@ h1 {
 	border-radius: 0 0 50px 50px; 
 } 
 
+.torso:hover{ 
+	animation: skew 0.5s infinite; 
+	animation-delay: 0s; 
+	animation-timing-function: linear;
+	transform: skew(25deg); 
+	animation-direction: alternate;
+}
+
+
+
+.element {
+  display: inline-block;
+  background-color: #0074d9;
+  height: 100px;
+  width: 100px;
+  font-size: 1px;
+  padding: 1px;
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+  animation: skew 0.1s infinite;
+  transform: skew(5deg);
+  animation-direction: alternate;
+  opacity: .7;
+}
+
+@keyframes skew {
+  0% {
+    transform: skewy(5deg);
+  }
+  100% {
+    transform: skewy(-5deg);
+  }
+}
 .lower_body { 
 	width: 200px; 
 	height: 200px;
@@ -97,6 +131,10 @@ h1 {
 	border-radius: 15px; 
 	background-color: white;  
 } 
+
+.eyes{ 
+	display: flex; 
+}
 
 .left_eye { 
 	/* These properties are new and you haven't encountered
